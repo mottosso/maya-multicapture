@@ -74,10 +74,10 @@ class Window(QtGui.QDialog):
                 True  # BGRA -> RGBA
             )
 
-        fname = os.path.join(self.tempdir, "temp_%i.jpg" % index)
-        image.writeToFile(fname, "jpg")
-
-        images.append(fname)
+            fname = os.path.join(self.tempdir, "temp_%i.jpg" % index)
+            image.writeToFile(fname, "jpg")
+    
+            images.append(fname)
 
         return images
 
